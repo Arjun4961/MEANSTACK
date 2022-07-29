@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>movie tickets using conditional statements</title>
+</head>
+<body>
+<script>
+n=2;
+for (i=1;i<=n;i++)
+{
+document.write("<h1 style='color:blue' >");
+document.write("User",+i+"<br>");
+var price=150;
+seats=parseInt(window.prompt("ENTER THE NUMBER OF SEATS YOU WANT FOR BOOKING"));
+if(seats>=0 && seats<=2)
+{
+document.write("<h2 style='color:red' >");
+document.write("ticket price is: ",+price+"<br>");
+totalprice=price*seats;
+document.write("<h1 style='color:red' >");
+document.write("total price is: ",+totalprice+"<br>");
+}
+else if(seats>2 && seats<6)
+{
+discount=parseInt(window.prompt("enter the discount"));
+document.write("<h1 style='color:yellow' >");
+document.write("actual price is: ",+price+"<br>");
+totalprice=price*seats;
+document.write("<h1 style='color:yellow' >");
+document.write("total price is : ",+totalprice+"<br>");
+discount=(discount/totalprice)*100;
+document.write("<h1 style='color:yellow' >");
+document.write("after applying discount: ",+discount+"<br>");
+payblecost=totalprice-discount;
+document.write("<h1 style='color:yellow' >");
+document.write("Reamining Amount That You Have To Pay: ",+payblecost+"<br>");
+
+}
+else
+{
+window.alert("booking is not allowed");
+document.write("<h1 style='color:pink' >");
+document.write("booking is not allowed","<br>");
+}
+} 
+</script>
+</body>
+</html>

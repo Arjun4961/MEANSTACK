@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>movie tickets using conditional statements</title>
+</head>
+<body>
+<script>
+var price=150;
+seats=parseInt(window.prompt("ENTER THE NUMBER OF SEATS YOU WANT FOR BOOKING"));
+if(seats>=0 && seats<=2)
+{
+document.write("ticket price is: ",+price+"<br>");
+totalprice=price*seats;
+document.write("total price is: ",+totalprice+"<br>");
+}
+else if(seats>2 && seats<6)
+{
+discount=parseInt(window.prompt("enter the discount"));
+document.write("actual price is: ",+price+"<br>");
+totalprice=price*seats;
+document.write("total price is : ",+totalprice+"<br>");
+discount=(discount/totalprice)*100;
+document.write("after applying discount: ",+discount+"<br>");
+payblecost=totalprice-discount;
+document.write("Reamining Amount That You Have To Pay: ",+payblecost+"<br>");
+
+}
+else
+{
+window.alert("booking is not allowed");
+}
+
+</script>
+</body>
+</html>
+
+
+
