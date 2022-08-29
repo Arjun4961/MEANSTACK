@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>color</title>
+</head>
+<body id="demo">
+<script>
+function f1()
+{
+document.getElementById("demo").style.backgroundColor = "lightblue";
+}
+function add(callback)
+{
+document.getElementById("demo").style.backgroundColor = "red";
+callback();
+}
+add(f1);
+setInterval(add,500);
+</script>
+</body>
+</html>
