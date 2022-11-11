@@ -1,0 +1,4 @@
+npm install -g express
+npm install express --save
+npm install -g mongoose
+npm install mongoose -save
