@@ -14,9 +14,9 @@ phno:Number
 });
 const nm=new mongoose.model("records",ns); 
 nm.insertMany([
-    { name: 'lalli', age: 28},
-    { name: 'balli', age: 45},
-    { name: 'pilli', age: 34}
+    { name: 'arjun', age: 28},
+    { name: 'reddy', age: 45},
+    { name: 'deshmukh', age: 34}
 ]).then(function(){
     console.log("Data inserted")  // Success
 }).catch(function(error){
