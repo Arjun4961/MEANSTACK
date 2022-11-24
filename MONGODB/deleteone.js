@@ -18,7 +18,7 @@ name:String,
 age:Number
 });
 const nm=new mongoose.model("records",ns);
-nm.deleteOne({name:'balli'}).then(function(){
+nm.deleteOne({name:'reddy'}).then(function(){
 console.log("Data deleted");//success
 }).catch(function(error){
 console.log(error)//failure
