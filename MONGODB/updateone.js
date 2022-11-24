@@ -16,7 +16,7 @@ name:String,
 age:Number
 });
 const nm=new mongoose.model("records",ns);
-const old={name:'lalli'};
+const old={name:'arjun'};
 const new1={age:100};
 let doc=nm.findOneAndUpdate(old,new1,(err)=>{
 if(err){
